@@ -23,7 +23,7 @@ public class DetalhesDoTopicoDto {
 		this.titulo = topico.getTitulo();
 		this.mensagem = topico.getMensagem();
 		this.dataCriacao = topico.getDataCriacao();
-		this.nomeAutor = topico.getAutor().getNome();
+	//	this.nomeAutor = topico.getAutor().getNome();
 		this.status = topico.getStatus();
 		this.respostas = new ArrayList<>();
 		this.respostas.addAll(topico.getRespostas().stream().map(RespostaDto::new).collect(Collectors.toList()));
